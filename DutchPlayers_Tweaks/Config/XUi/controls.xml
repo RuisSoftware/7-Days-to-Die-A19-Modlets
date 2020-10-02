@@ -1,0 +1,30 @@
+<configs>
+<append xpath="/controls">
+	<!-- Make cells not look like crap and item icons fit properly -->
+	<kh60_backpack_item_stack>
+		<rect controller="ItemStack" style="itemStack, hover" collider_scale="1.1" >
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="63" height="63" color="[black]" type="sliced" fillcenter="false" />	
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="58" height="58" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+			<sprite depth="2" name="highlightOverlay" width="57" height="57" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+
+			<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="58,58" globalopacity="true"/>
+			
+			<sprite depth="4" name="itemIcon" width="50" height="33" atlas="ItemIconAtlas" sprite="{itemicon}" pos="25,-20" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="17" height="17" sprite="" pos="2,-2" foregroundlayer="true"/>
+			
+			<sprite depth="3" name="durabilityBackground" width="56" height="7" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -50" foregroundlayer="true"/>
+			<filledsprite depth="4" name="durability" width="56" height="7" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -50" foregroundlayer="true"/>
+			
+			<sprite depth="5" name="disabledOverlay" width="57" height="57" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+			
+			<label depth="7" name="stackValue" pos="-2,-40" width="55" height="17" text="{itemcount}" font_size="18" effect="outline" justify="center" />
+			<label depth="7" name="timer" pos="35,-33" width="55" height="21" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="55" height="55" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-30" width="0" height="0" text="" font_size="21" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true"/>
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="28,28" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+		</rect>
+	</kh60_backpack_item_stack>
+</append>
+</configs>

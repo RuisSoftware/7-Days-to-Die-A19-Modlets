@@ -1,0 +1,393 @@
+<configs>
+	<append xpath="/blocks">
+<!-- DECORATIONAL VEHICLES. VEHICLES THAT ARE RANDOMLY SPAWNED INTO THE WORLD AND CANNOT BE DRIVEN.-->
+
+
+    <!-- INLAND WRECK VEHICLES NOT DRIVEABLE-->
+    <block name="[DP]Inland Car Wreck 1">
+      <property name="Material" value="Mmetal"/>
+      <!-- cars explode when destroyed by a tool without harvest settings -->
+      <property name="CreativeMode" value="None"/>
+      <property name="Class" value="CarExplodeLoot"/>
+      <property name="CustomIcon" value="cntCar03SedanDamage0"/>
+      <property name="LootList" value="19"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="Place" value="TowardsPlacer"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck1"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,2,6"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="ShowModelOnFall" value="false"/>
+      <property name="PassThroughDamage" value="true"/>
+      <drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+      <drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+      <!-- <drop event="Fall" name="cntCar03SedanDamage1" count="1" prob="1.0" stick_chance="1"/> -->
+      <property name="BigDecorationRadius" value="5"/>
+      <property name="CanDecorateOnSlopes" value="false"/>
+      <!--      <property name="DowngradeBlock" value="cntCar03SedanDamage1"/>
+      <property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
+      <property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
+      <property name="RandomTintColor3" value="200,161,17" param1="car03_white"/>
+      <property name="RandomTintColor4" value="212,50,7" param1="car03_white"/>
+      <property name="RandomTintColor5" value="246,0,15" param1="car03_white"/>
+      <property name="RandomTintColor6" value="255,204,16" param1="car03_white"/>
+      <property name="RandomTintColor7" value="255,255,255" param1="car03_white"/>
+      <property name="RandomTintColor8" value="5,95,190" param1="car03_white"/>
+      <property name="RandomTintColor9" value="70,158,255" param1="car03_white"/>
+      <property name="RandomTintColor10" value="184,6,40" param1="car03_white"/>
+      <property name="RandomTintColor11" value="11,30,5" param1="car03_white"/>
+      <property name="RandomTintColor12" value="0,0,0" param1="car03_white"/>
+      <property name="RandomTintColor13" value="0,16,96" param1="car03_white"/>
+      <property name="RandomTintColor14" value="68,58,2" param1="car03_white"/>
+      <property name="RandomTintColor15" value="128,128,128" param1="car03_white"/>
+     
+	<property name="RandomTintColor2" value="0,0,0" param1="2"/>
+	<property name="RandomTintColor3" value="0,0,0" param1="2"/>
+	<property name="RandomTintColor4" value="0,0,0" param1="2"/>
+	<property name="RandomTintColor5" value="0,0,0" param1="2"/>
+	<property name="RandomTintColor6" value="0,0,0" param1="2"/>
+	<property name="RandomTintColor7" value="0,0,0" param1="2"/>
+	<property name="RandomTintColor8" value="0,0,0" param1="2"/>
+	-->
+      <property class="Explosion">
+        <property name="ParticleIndex" value="4"/>
+        <!-- which prefab/particle is used -->
+        <property name="RadiusBlocks" value="5"/>
+        <!-- damage radius for blocks -->
+        <property name="BlockDamage" value="500"/>
+        <!-- damage for blocks in the center of the explosion -->
+
+        <property name="RadiusEntities" value="5"/>
+        <!-- damage radius for entities -->
+        <property name="EntityDamage" value="70"/>
+        <!-- damage for entities in the center of the explosion -->
+      </property>
+      <property name="ActivationDistance" value="6"/>
+      <property name="FilterTags" value="floot"/>
+    </block>
+
+    <block name="[DP]Inland Car Wreck 2">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck2"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 3">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck3"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 4">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck4"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 5">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck5"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 6">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck6"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+      <property name="MultiBlockDim" value="2,2,8"/>
+    </block>
+    <block name="[DP]Inland Car Wreck 7">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck7"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 8">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck8"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+      <property name="MultiBlockDim" value="2,2,8"/>
+    </block>
+    <block name="[DP]Inland Car Wreck 9">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck9"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 10">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck10"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 11">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck11"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 12">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck12"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 13">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck13"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 14">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck14"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 15">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck15"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 16">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck16"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 17">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck17"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 18">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck18"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 19">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck19"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 20">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck20"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 21">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck21"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 22">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck22"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 23">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck23"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Inland Car Wreck 24">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/InlandWreck.unity3d?InlandCarWreck24"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+	
+	
+    <block name="[DP]Road Wreck 1">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck1"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 2">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck2"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 3">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck3"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 4">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck4"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 5">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck5"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 6">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck6"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 7">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck7"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 8">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck8"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 9">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck9"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 10">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck10"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 11">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck11"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 12">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck12"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 13">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck13"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 14">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck14"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 15">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck15"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 16">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck16"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 17">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck17"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 18">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck18"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 19">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck19"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 20">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck20"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 21">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck21"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 22">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck22"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 23">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck23"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 24">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck24"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 25">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck25"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 26">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck26"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 27">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck27"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 28">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck28"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 29">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck29"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 30">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck30"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 31">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck31"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 32">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck32"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 33">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck33"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 34">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck34"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 35">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck35"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 36">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck36"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 37">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck37"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+    <block name="[DP]Road Wreck 38">
+      <property name="Extends" value="[DP]Inland Car Wreck 1"/>
+      <property name="Model" value="#@modfolder:Resources/RoadWreck.unity3d?RoadWreck38"/>
+      <property name="CustomIcon" value="TechMachine2Prefab" />
+    </block>
+
+<!-- DRIVEABLE CARS. REAL VEHICLES YOU CAN MAKE AND DRIVE.-->
+    
+    
+    
+    
+    
+  </append>
+</configs>

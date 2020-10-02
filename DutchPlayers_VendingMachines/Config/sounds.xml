@@ -1,0 +1,56 @@
+﻿<configs>
+    <append xpath="/Sounds">
+
+      <SoundDataNode name="GasStart">
+        <AudioSource name="Sounds/AudioSource_VO"/>
+        <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+        <AudioClip ClipName="#@modfolder:Sounds/Sounds.unity3d?GasStart1"/>
+        <LocalCrouchVolumeScale value="1.0"/>
+        <CrouchNoiseScale value="1"/>
+        <NoiseScale value="1"/>
+        <MaxVoices value="3"/>
+        <MaxEntities name="6"/>
+        <MaxRepeatRate value="0.01"/>
+      </SoundDataNode>
+
+      <SoundDataNode name="GasStop">
+        <AudioSource name="Sounds/AudioSource_VO"/>
+        <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+        <AudioClip ClipName="#@modfolder:Sounds/Sounds.unity3d?GasStop1"/>
+        <LocalCrouchVolumeScale value="1.0"/>
+        <CrouchNoiseScale value="1"/>
+        <NoiseScale value="1"/>
+        <MaxVoices value="3"/>
+        <MaxEntities name="6"/>
+        <MaxRepeatRate value="0.01"/>
+      </SoundDataNode>
+
+      <SoundDataNode name="AirStop">
+        <AudioSource name="Sounds/AudioSource_VO"/>
+        <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+        <AudioClip ClipName="#@modfolder:Sounds/Sounds.unity3d?AirPumpStop1"/>
+        <LocalCrouchVolumeScale value="1.0"/>
+        <CrouchNoiseScale value="1"/>
+        <NoiseScale value="1"/>
+        <MaxVoices value="3"/>
+        <MaxEntities name="6"/>
+        <MaxRepeatRate value="0.01"/>
+      </SoundDataNode>
+
+      <SoundDataNode name="AirStart">
+        <AudioSource name="Sounds/AudioSource_VO"/>
+        <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+        <AudioClip ClipName="#@modfolder:Sounds/Sounds.unity3d?AirPumpStart1"/>
+        <LocalCrouchVolumeScale value="1.0"/>
+        <CrouchNoiseScale value="1"/>
+        <NoiseScale value="1"/>
+        <MaxVoices value="3"/>
+        <MaxEntities name="6"/>
+        <MaxRepeatRate value="0.01"/>
+      </SoundDataNode>
+      
+      
+      
+    </append>
+
+</configs>

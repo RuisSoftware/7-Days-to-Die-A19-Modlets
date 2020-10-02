@@ -1,0 +1,736 @@
+<configs>
+
+	<append xpath="/blocks">	
+
+
+    <block name="[DP]Workstation 1">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_1Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,2,1"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Blueprintstation 1">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_2Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,2,3"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Weaponstation 1">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_3Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+    
+
+
+    <block name="[DP]Weaponstation 2">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_4Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 2">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_5Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 3">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_6Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Blueprintstation 2">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_7Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 4">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_8Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Paintstation 1">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_9Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 5">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_10Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 6">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_11Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 7">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_12Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Workstation 8">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?Workstation_13Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="[DP]Log Cutter">
+      <property name="Class" value="Workstation"/>
+      <property name="CustomIcon" value="Workstation_1Prefab"/>
+      <property name="DescriptionKey" value="Workstation01Desc"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="MaxDamage" value="1200"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Workstations.unity3d?LogCutter1Prefab"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="HeatMapStrength" value="0.5"/>
+      <property name="HeatMapTime" value="1200"/>
+      <property name="HeatMapFrequency" value="25"/>
+      <!--<property name="RecipeList" value="backpack, workbench"/>-->
+      <!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+      <property name="Stacknumber" value="1"/>
+
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="player,workbench"/>
+      </property>
+      <property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+      <property name="OpenSound" value="open_workbench" />
+      <property name="CloseSound" value="close_workbench" />
+      <property name="WorkstationJournalTip" value="workbenchTip" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25"/>
+        <property name="resourceMechanicalParts" value="20"/>
+        <property name="resourceWood" value="50"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="776"/>
+      <property name="Group" value="Building,Science"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="SortOrder1" value="70i0"/>
+    </block>
+    
+    
+	</append>
+</configs>

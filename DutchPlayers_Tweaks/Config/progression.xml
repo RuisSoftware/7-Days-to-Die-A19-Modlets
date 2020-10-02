@@ -1,0 +1,6 @@
+<configs>
+<!-- Change Pack Mule Perk to unlock all slots -->
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='4']/@value">5</set>
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='9']/@value">10</set>
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">28</set>
+</configs>

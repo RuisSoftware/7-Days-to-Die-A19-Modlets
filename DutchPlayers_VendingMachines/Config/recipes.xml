@@ -1,0 +1,393 @@
+<configs>
+	<append xpath="/recipes" >
+	
+	
+<recipe name="[DP]Vending Machine 1" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+</recipe>
+
+
+    <recipe name="[DP]Vending Machine 2" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Vending Machine 3" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Gumball Machine 1" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Slot Machine 1" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Arcade Machine 1" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Tech Machine 1" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Blackjack Table" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Roulette Table" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Gaspump 1" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Gaspump 2" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Gaspump 3" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Airpump 1" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+
+    <recipe name="[DP]Airpump 2" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+	
+	
+    <recipe name="[DP]Newspaper bin A1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+	
+    <recipe name="[DP]Newspaper bin A2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin A3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin A4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin A5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin A6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin B1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin B2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin B3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin B4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin B5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin B6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin C1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin C2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin C3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin C4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin C5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin C6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin D1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin D2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin D3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin D4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin D5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin D6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin E1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin E2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin E3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin E4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin E5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin E6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin F1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin F2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin F3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin F4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin F5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin F6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin G1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin G2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin G3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin G4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin G5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin G6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin H1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin H2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin H3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin H4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin H5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin H6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin I1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin I2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin I3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin I4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin I5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin I6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin J1">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin J2">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin J3">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin J4">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin J5">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+    <recipe name="[DP]Newspaper bin J6">
+      <ingredient name="resourceForgedIron" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="1"/>
+    </recipe>
+
+	
+
+
+	</append>
+</configs>

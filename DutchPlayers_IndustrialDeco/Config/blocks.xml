@@ -1,0 +1,120 @@
+<configs>
+
+
+	<append xpath="/blocks">
+
+    <block name="[DP]Ladder 1">
+      <property name="Group" value="Building,Basics"/>
+      <!--<property name="DisplayType" value="blockShootThrough" />-->
+      <property name="Class" value="Ladder"/>
+      <property name="Material" value="Mwood_ladders"/>
+      <property name="LightOpacity" value="0"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder1Prefab" />
+      <property name="UseGlobalUV" value="Local"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Collide" value="movement,melee,rocket"/>
+      <property name="FuelValue" value="150"/>
+      <property name="MultiBlockDim" value="1,4,1"/>
+      <property class="RepairItems">
+        <property name="resourceWood" value="3"/>
+      </property>
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="ladderMetal"/>
+        <property name="Item" value="resourceForgedIron"/>
+        <property name="ItemCount" value="5"/>
+        <property name="UpgradeHitCount" value="4"/>
+      </property>
+      <drop event="Destroy" name="resourceWood" count="1,2"/>
+      <property name="EconomicValue" value="6"/>
+      <property name="EconomicBundleSize" value="20"/>
+      <property name="FilterTags" value="fdecor,fother"/>
+    </block>
+    
+    
+		<block name="[DP]Ladder 2">
+			<property name="Extends" value="[DP]Ladder 1"/>			
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder2Prefab" />
+			<property name="CustomIcon" value="FlagNetherlands" />
+      <property name="MultiBlockDim" value="1,5,1"/>
+		</block>
+    <block name="[DP]Ladder 3">
+      <property name="Extends" value="[DP]Ladder 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder3Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+      <property name="MultiBlockDim" value="1,2,1"/>
+    </block>
+    <block name="[DP]Ladder 4">
+      <property name="Extends" value="[DP]Ladder 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder4Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+      <property name="MultiBlockDim" value="1,3,1"/>
+    </block>
+    <block name="[DP]Ladder 5">
+      <property name="Extends" value="[DP]Ladder 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder5Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+      <property name="MultiBlockDim" value="1,3,1"/>
+    </block>
+    <block name="[DP]Ladder 6">
+      <property name="Extends" value="[DP]Ladder 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder6Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+      <property name="MultiBlockDim" value="1,2,1"/>
+    </block>
+    <block name="[DP]Ladder 7">
+      <property name="Extends" value="[DP]Ladder 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?Ladder7Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+      <property name="MultiBlockDim" value="1,2,1"/>
+    </block>
+
+
+
+    <block name="[DP]Chainlink Fence 1">
+      <property name="Material" value="Mmetal"/>
+      <property name="DisplayType" value="blockMulti" />
+      <property name="MultiBlockDim" value="2,2,1"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="Path" value="solid"/>
+      <property name="StabilitySupport" value="false"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="CanPickup" value="true" />
+      <property name="Damage" value="33"/>
+      <property name="Damage_received" value="33"/>
+      <property name="MaxDamage" value="33"/>
+      <property name="FilterTags" value="fdecor,ftraps"/>
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceMetalPipe" count="4,8" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceScrapIron" count="2,5" tag="allHarvest"/>
+      <drop event="Destroy" name="resourceScrapIron" count="2,5"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?ChainlinkFence1Prefab" />
+      <property name="CustomIcon" value="FlagUSA" />
+    </block>
+    <block name="[DP]Chainlink Fence 2">
+      <property name="Extends" value="[DP]Chainlink Fence 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?ChainlinkFence2Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+    </block>
+    <block name="[DP]Chainlink Fence 3">
+      <property name="Extends" value="[DP]Chainlink Fence 1"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/IndustrialDeco.unity3d?ChainlinkFence3Prefab" />
+      <property name="CustomIcon" value="FlagNetherlands" />
+    </block>
+	
+	</append>
+</configs>

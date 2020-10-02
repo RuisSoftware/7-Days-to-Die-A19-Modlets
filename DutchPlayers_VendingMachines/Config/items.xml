@@ -1,0 +1,61 @@
+﻿<configs>
+
+  <append xpath="/items">
+
+
+    <item name="Gambling Ticket - Bronze">
+      <property name="CustomIcon" value="questMaster"/>
+      <property name="CustomIconTint" value="996a26"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="HoldType" value="21"/>
+      <property name="Stacknumber" value="50"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="200"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="RepairTime" value="0.5"/>
+      <property name="RepairAmount" value="20"/>
+      <property name="CraftingIngredientTime" value="0.2"/>
+    </item>
+
+    <item name="Gambling Ticket - Gold">
+      <property name="CustomIcon" value="questMaster"/>
+      <property name="CustomIconTint" value="e7b923"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="HoldType" value="21"/>
+      <property name="Stacknumber" value="20"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="1000"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="RepairTime" value="0.5"/>
+      <property name="RepairAmount" value="20"/>
+      <property name="CraftingIngredientTime" value="0.2"/>
+    </item>
+
+    <item name="Gambling Ticket - Diamond">
+      <property name="CustomIcon" value="questMaster"/>
+      <property name="CustomIconTint" value="00FFFF"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="HoldType" value="21"/>
+      <property name="Stacknumber" value="10"/>
+      <!-- STK resource -->
+      <property name="EconomicValue" value="3000"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="RepairTime" value="0.5"/>
+      <property name="RepairAmount" value="20"/>
+      <property name="CraftingIngredientTime" value="0.2"/>
+    </item>
+  </append>
+
+
+  <append xpath="/items/item[@name='meleeToolWrench']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,Gambling Ticket - Bronze,Gambling Ticket - Gold,Gambling Ticket - Diamond</append>
+  <append xpath="/items/item[@name='meleeToolStoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,Gambling Ticket - Bronze,Gambling Ticket - Gold,Gambling Ticket - Diamond</append>
+  <append xpath="/items/item[@name='gunToolNailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,Gambling Ticket - Bronze,Gambling Ticket - Gold,Gambling Ticket - Diamond</append>
+  <append xpath="/items/item[@name='meleeToolClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,Gambling Ticket - Bronze,Gambling Ticket - Gold,Gambling Ticket - Diamond</append>
+
+</configs>

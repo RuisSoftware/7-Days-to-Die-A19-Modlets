@@ -1,0 +1,342 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="[DP]Chair 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+		</recipe>
+		<recipe name="[DP]Chair 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+		</recipe>
+		<recipe name="[DP]Chair 3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Chair 4" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Chair 5" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Chair 6" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Chair 7" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Chair 8" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Armchair 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Armchair 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Armchair 3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Armchair 4" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Armchair 5" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Office Armchair 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Office Armchair 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Office Armchair 3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Office Armchair 4" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Toilet Open" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		<recipe name="[DP]Toilet Closed" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		<recipe name="[DP]Pissoir (Toilet)" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		<recipe name="[DP]Toilet paper" count="1" craft_area="workbench" >
+		<ingredient name="resourceCobblestones" count="1"/>
+		<ingredient name="resourcePaint" count="1"/>
+		<ingredient name="resourcePaper" count="8"/>
+		</recipe>
+		
+		<recipe name="[DP]Acoustic System 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Acoustic System 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Acoustic System 3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Dining Table 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceWood" count="6"/>
+	<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="[DP]Dining Table 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceWood" count="6"/>
+	<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="[DP]Gas Stove" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+	<ingredient name="resourceForgedIron" count="40"/>
+		</recipe>
+		<recipe name="[DP]Toaster" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+	<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		<recipe name="[DP]Bathroom Sink" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		<recipe name="[DP]Gast Stove Prop 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+		</recipe>
+		<recipe name="[DP]Breakfast bar" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceWood" count="6"/>
+	<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="[DP]Team Mugs" count="1" craft_area="workbench" >
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Schematics Bookcase" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Bookcase 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Couch 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Couch 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Sofa 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Sofa 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Sofa 3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Hand Dryer 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Towel Dryer 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>
+		<recipe name="[DP]Towel Dryer 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>
+		<recipe name="[DP]Towel Dryer Center 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+		</recipe>
+		<recipe name="[DP]Fridge 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Cabinet 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Cabinet Doors 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Sink 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Sink Doors 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Dish 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceCobblestones" count="4"/>
+	<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Dish 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Kitchen Hoods 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Coffee Table 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceWood" count="6"/>
+	<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="[DP]Coffee Table 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceWood" count="6"/>
+	<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="[DP]Bathroom Tab" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		<recipe name="[DP]Shower 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		<recipe name="[DP]Shower 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		<recipe name="[DP]Tab 1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		<recipe name="[DP]Tab 2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		<recipe name="[DP]Modular Bench Angle" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Modular Bench Side" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Pouf" count="1" craft_area="workbench" >
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="[DP]Sculpture Art 1" count="1" craft_area="workbench" >
+	<ingredient name="resourceClayLump" count="90"/>
+		</recipe>
+		<recipe name="[DP]Cross Pot" count="1" craft_area="workbench" >
+	<ingredient name="resourceClayLump" count="90"/>
+		</recipe>
+		<recipe name="[DP]Cylinder Pot" count="1" craft_area="workbench" >
+	<ingredient name="resourceClayLump" count="90"/>
+		</recipe>
+		<recipe name="[DP]Sphere Pot" count="1" craft_area="workbench" >
+	<ingredient name="resourceClayLump" count="90"/>
+		</recipe>
+		<recipe name="[DP]Square Pot" count="1" craft_area="workbench" >
+	<ingredient name="resourceClayLump" count="90"/>
+		</recipe>
+		<recipe name="[DP]Triangle Pot" count="1" craft_area="workbench" >
+	<ingredient name="resourceClayLump" count="90"/>
+		</recipe>
+		<recipe name="[DP]Mirror 1" count="1" craft_area="workbench" >
+	<ingredient name="glassBusinessSheet" count="5"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		
+	</append>
+</configs>

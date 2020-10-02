@@ -1,0 +1,396 @@
+<configs>
+	<append xpath="/items">
+
+    <item name="[DP]Kukri Knife">
+      <property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+      <property name="DisplayType" value="melee"/>
+      <property name="HoldType" value="36"/>
+      <property name="Meshfile" value="#@modfolder:Resources/Melee.unity3d?Knife1Prefab"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="RepairTools" value="resourceForgedIron"/>
+      <property name="DegradationBreaksAfter" value="false"/>
+      <property name="FuelValue" value="100"/>
+      <property name="EconomicValue" value="300"/>
+      <property name="SoundJammed" value="ItemNeedsRepair"/>
+      <property name="SoundDestroy" value="wooddestroy1"/>
+
+      <property class="Action0">
+        <property name="Class" value="DynamicMelee"/>
+        <property name="Damage_type" value="Slashing"/>
+        <property name="Sphere" value="0.1"/>
+        <property name="Sound_start" value="swoosh"/>
+        <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+        <property name="ToolCategory.Butcher" value="0" param1="4"/>
+        <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+      </property>
+      <property class="Action1">
+        <property name="Class" value="DynamicMelee"/>
+        <property name="Damage_type" value="Slashing"/>
+        <property name="Sphere" value="0.1"/>
+        <property name="Sound_start" value="swoosh"/>
+        <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+        <property name="ToolCategory.Butcher" value="0" param1="4"/>
+        <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+        <property name="UsePowerAttackAnimation" value="true"/>
+      </property>
+
+      <effect_group name="Base Effects">
+        <passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+        <passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+        <passive_effect name="EntityDamage" operation="base_set" value="13"/>
+        <!-- meleeToolHuntingKnife -->
+        <passive_effect name="BlockDamage" operation="base_set" value="7"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
+        <!-- affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+        <!-- A16 1.2 -->
+        <passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+        <passive_effect name="StaminaLoss" operation="base_set" value="12.3" tags="primary"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6"/>
+        <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+        <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+      </effect_group>
+      <effect_group name="Power Attack">
+        <passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+        <passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+        <passive_effect name="StaminaLoss" operation="base_add" value="19" tags="secondary"/>
+        <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+          <requirement name="IsMale" target="self"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+          <requirement name="IsMale" target="self" invert="true"/>
+        </triggered_effect>
+      </effect_group>
+      <property name="Group" value="Ammo/Weapons"/>
+      <property name="ActionSkillGroup" value="Blade Weapons"/>
+      <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+      <property name="RepairExpMultiplier" value="5.5"/>
+    </item>
+
+    
+    
+  <item name="[DP]Knife 2">
+    <property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+    <property name="DisplayType" value="melee"/>
+    <property name="HoldType" value="36"/>
+    <property name="Meshfile" value="#@modfolder:Resources/Melee.unity3d?Knife2Prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="RepairTools" value="resourceForgedIron"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="FuelValue" value="100"/>
+    <property name="EconomicValue" value="300"/>
+    <property name="SoundJammed" value="ItemNeedsRepair"/>
+    <property name="SoundDestroy" value="wooddestroy1"/>
+
+    <property class="Action0">
+      <property name="Class" value="DynamicMelee"/>
+      <property name="Damage_type" value="Slashing"/>
+      <property name="Sphere" value="0.1"/>
+      <property name="Sound_start" value="swoosh"/>
+      <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="DynamicMelee"/>
+      <property name="Damage_type" value="Slashing"/>
+      <property name="Sphere" value="0.1"/>
+      <property name="Sound_start" value="swoosh"/>
+      <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+      <property name="UsePowerAttackAnimation" value="true"/>
+    </property>
+
+    <effect_group name="Base Effects">
+      <passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+      <passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+      <passive_effect name="EntityDamage" operation="base_set" value="13"/>
+      <!-- meleeToolHuntingKnife -->
+      <passive_effect name="BlockDamage" operation="base_set" value="7"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
+      <!-- affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
+      <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+      <!-- A16 1.2 -->
+      <passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+      <passive_effect name="StaminaLoss" operation="base_set" value="12.3" tags="primary"/>
+      <passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6"/>
+      <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+      <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+      <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+    </effect_group>
+    <effect_group name="Power Attack">
+      <passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+      <passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+      <passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+      <passive_effect name="StaminaLoss" operation="base_add" value="19" tags="secondary"/>
+      <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+        <requirement name="IsMale" target="self"/>
+      </triggered_effect>
+      <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+        <requirement name="IsMale" target="self" invert="true"/>
+      </triggered_effect>
+    </effect_group>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Blade Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+    <property name="RepairExpMultiplier" value="5.5"/>
+  </item>
+
+
+
+  <item name="[DP]Knife 3">
+    <property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+    <property name="DisplayType" value="melee"/>
+    <property name="HoldType" value="36"/>
+    <property name="Meshfile" value="#@modfolder:Resources/Melee.unity3d?Knife3Prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="RepairTools" value="resourceForgedIron"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="FuelValue" value="100"/>
+    <property name="EconomicValue" value="300"/>
+    <property name="SoundJammed" value="ItemNeedsRepair"/>
+    <property name="SoundDestroy" value="wooddestroy1"/>
+
+    <property class="Action0">
+      <property name="Class" value="DynamicMelee"/>
+      <property name="Damage_type" value="Slashing"/>
+      <property name="Sphere" value="0.1"/>
+      <property name="Sound_start" value="swoosh"/>
+      <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="DynamicMelee"/>
+      <property name="Damage_type" value="Slashing"/>
+      <property name="Sphere" value="0.1"/>
+      <property name="Sound_start" value="swoosh"/>
+      <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+      <property name="UsePowerAttackAnimation" value="true"/>
+    </property>
+
+    <effect_group name="Base Effects">
+      <passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+      <passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+      <passive_effect name="EntityDamage" operation="base_set" value="13"/>
+      <!-- meleeToolHuntingKnife -->
+      <passive_effect name="BlockDamage" operation="base_set" value="7"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
+      <!-- affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
+      <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+      <!-- A16 1.2 -->
+      <passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+      <passive_effect name="StaminaLoss" operation="base_set" value="12.3" tags="primary"/>
+      <passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6"/>
+      <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+      <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+      <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+    </effect_group>
+    <effect_group name="Power Attack">
+      <passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+      <passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+      <passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+      <passive_effect name="StaminaLoss" operation="base_add" value="19" tags="secondary"/>
+      <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+        <requirement name="IsMale" target="self"/>
+      </triggered_effect>
+      <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+        <requirement name="IsMale" target="self" invert="true"/>
+      </triggered_effect>
+    </effect_group>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Blade Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+    <property name="RepairExpMultiplier" value="5.5"/>
+  </item>
+
+
+    
+  <item name="[DP]Sword 1">
+    <property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+    <property name="DisplayType" value="melee"/>
+    <property name="HoldType" value="36"/>
+    <property name="Meshfile" value="#@modfolder:Resources/Melee.unity3d?Sword1Prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="RepairTools" value="resourceForgedIron"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="FuelValue" value="100"/>
+    <property name="EconomicValue" value="300"/>
+    <property name="SoundJammed" value="ItemNeedsRepair"/>
+    <property name="SoundDestroy" value="wooddestroy1"/>
+
+    <property class="Action0">
+      <property name="Class" value="DynamicMelee"/>
+      <property name="Damage_type" value="Slashing"/>
+      <property name="Sphere" value="0.1"/>
+      <property name="Sound_start" value="swoosh"/>
+      <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="DynamicMelee"/>
+      <property name="Damage_type" value="Slashing"/>
+      <property name="Sphere" value="0.1"/>
+      <property name="Sound_start" value="swoosh"/>
+      <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="4"/>
+      <property name="Sound_harvesting" value="open_animal" param1="organic"/>
+      <property name="UsePowerAttackAnimation" value="true"/>
+    </property>
+
+    <effect_group name="Base Effects">
+      <passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+      <passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+      <passive_effect name="EntityDamage" operation="base_set" value="13"/>
+      <!-- meleeToolHuntingKnife -->
+      <passive_effect name="BlockDamage" operation="base_set" value="7"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+      <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
+      <!-- affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
+      <passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+      <!-- A16 1.2 -->
+      <passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+      <passive_effect name="StaminaLoss" operation="base_set" value="12.3" tags="primary"/>
+      <passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6"/>
+      <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+      <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+      <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+    </effect_group>
+    <effect_group name="Power Attack">
+      <passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+      <passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+      <passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+      <passive_effect name="StaminaLoss" operation="base_add" value="19" tags="secondary"/>
+      <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+        <requirement name="IsMale" target="self"/>
+      </triggered_effect>
+      <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+        <requirement name="IsMale" target="self" invert="true"/>
+      </triggered_effect>
+    </effect_group>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Blade Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+    <property name="RepairExpMultiplier" value="5.5"/>
+  </item>
+
+    <item name="[DP]AK Rainer">
+      <property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,bottomAttachments,perkAutomaticWeapons"/>
+      <property name="DisplayType" value="rangedGun"/>
+      <property name="HoldType" value="6"/>
+      <property name="Meshfile" value="#@modfolder:Resources/Weapons.unity3d?AKRainerPrefab"/>
+      <property name="Material" value="MmechanicalParts"/>
+      <property name="Weight" value="27"/>
+      <property name="RepairTools" value="resourceRepairKit"/>
+      <property name="DegradationBreaksAfter" value="false"/>
+      <property name="SoundJammed" value="weapon_jam"/>
+      <property name="Attachments" value="meleeToolFlashlight02"/>
+      <property name="TintColor" value="255,255,255"/>
+      <property name="CrosshairOnAim" value="true"/>
+      <!-- aimTest -->
+      <property name="CrosshairUpAfterShot" value="true"/>
+      <!-- aimTest -->
+      <property name="Sound_Sight_In" value="smg_sight_in"/>
+      <property name="Sound_Sight_Out" value="smg_sight_out"/>
+
+      <property name="Group" value="Ammo/Weapons"/>
+      <property name="ActionSkillGroup" value="Rifles"/>
+      <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+      <property name="RepairExpMultiplier" value="10.8"/>
+      <property name="LightValue" value="0.45"/>
+      <property name="EconomicValue" value="400"/>
+
+      <property class="Action0">
+        <property name="Class" value="Ranged"/>
+        <property name="Delay" value="0.150"/>
+        <!-- obsolete if rounds per minute exists -->
+        <property name="Magazine_items" value="ammo9mmBullet,ammo9mmBulletSteel"/>
+        <property name="Reload_time" value="4.1"/>
+        <property name="Sound_start" value="mp5_fire"/>
+        <property name="Sound_end" value="mp5_fire_end"/>
+        <property name="Sound_empty" value="weapon_empty"/>
+        <property name="Sound_reload" value="mp5_reload"/>
+        <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+        <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+        <!-- <property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/> -->
+        <property name="ScopeOffset" value="-0.000525,0.1449,-0.2"/>
+        <property name="SideOffset" value="0,0,0"/>
+        <property name="BarrelOffset" value="-0.062,0.062,0.16"/>
+      </property>
+      <property class="Action1">
+        <property name="Class" value="Zoom"/>
+        <property name="Zoom_max_out" value="55"/>
+        <property name="Zoom_max_in" value="55"/>
+        <property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
+      </property>
+
+      <effect_group name="Base Effects">
+        <!-- MP5 -->
+        <passive_effect name="MaxRange" operation="base_set" value="65"/>
+        <passive_effect name="DamageFalloffRange" operation="base_set" value="30"/>
+
+        <passive_effect name="EntityDamage" operation="base_subtract" value="6"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value="0"/>
+
+        <passive_effect name="RoundsPerMinute" operation="base_set" value="500"/>
+        <passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+
+        <passive_effect name="MagazineSize" operation="base_set" value="30"/>
+        <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+        <!-- 4s -->
+        <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+        <passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+
+        <passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.35"/>
+        <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.35"/>
+        <passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35"/>
+        <passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+        <passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+        <passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+
+        <passive_effect name="KickDegreesVertical" operation="base_set" value="0.5,1"/>
+        <passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.3,0.3"/>
+        <display_value name="dRecoil" value="7" />
+
+        <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
+        <passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
+        <!-- mp5 -->
+        <passive_effect name="DegradationMax" operation="base_set" value="7000,14000" tier="1,6"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
+      </effect_group>
+    </item>
+    
+  </append>
+</configs>

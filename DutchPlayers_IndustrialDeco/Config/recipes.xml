@@ -1,0 +1,45 @@
+<configs>
+	<append xpath="/recipes" >
+<recipe name="[DP]Ladder 1" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Ladder 2" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Ladder 3" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Ladder 4" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Ladder 5" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Ladder 6" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Ladder 7" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="24"/>
+	
+</recipe>
+<recipe name="[DP]Chainlink Fence 1" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="35"/>
+	
+</recipe>
+<recipe name="[DP]Chainlink Fence 2" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="35"/>
+	
+</recipe>
+<recipe name="[DP]Chainlink Fence 3" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="35"/>
+	
+</recipe>
+		
+	</append>
+</configs>
