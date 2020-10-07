@@ -1,5 +1,5 @@
 # 7-Days-to-Die-A19-Modlets
-This are modlets from the Netherlands made for the globe.
+This are modlets from the Netherlands made for 7 Days to Die users to use.
 
 Join Discord for more info.
 
