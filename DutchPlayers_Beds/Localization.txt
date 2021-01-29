@@ -1,7 +1,0 @@
-Bed01Desc,blocks,Block,New,A nice warm bed. Activates Hypothermal Resist Buff when lay on it.,,,,,
-Bed02Desc,blocks,Block,New,A nice warm bed. Activates Hyperthermal Resist Buff when lay on it.,,,,,
-Bed03Desc,blocks,Block,New,A nice warm bed. Slowly regenerates your health when lay on it.,,,,,
-Bed04Desc,blocks,Block,New,A nice warm bed. Slowly regenerates your health when lay on it.,,,,,
-Bed05Desc,blocks,Block,New,A nice warm bed. Slowly regenerates your health when lay on it, but costs you water.,,,,,
-Bed06Desc,blocks,Block,New,A nice daybed. Activates Hypothermal Resist en Hypertermal Resist Buff when lay on it.,,,,,
-Bed07Desc,blocks,Block,New,A military bed for the greatest people. Hypothermal Resist en Hypertermal Resist buffs and slowly regenerates your health.,,,,,

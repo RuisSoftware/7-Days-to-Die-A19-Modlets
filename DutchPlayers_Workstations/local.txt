@@ -1,2 +1,0 @@
-
-Workstation01Desc,blocks,Block,New,A nice warm bed. A new workbench.,,,,,

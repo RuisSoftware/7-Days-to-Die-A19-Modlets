@@ -1,5 +1,0 @@
-<config>
-
-<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,[DP]Wind Turbine 1,[DP]Solarpanel 1,[DP]Batterybank 1,[DP]Electrical box 1,[DP]Generator Yellow,[DP]Generator Red,[DP]Generator Red 2,[DP]Generator On Wheels,[DP]Electrical Pipe Relay 1,[DP]Speaker</append>
-	
-</config>

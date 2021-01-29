@@ -1,2 +1,0 @@
-<configs>	
-<set xpath="/windows/window[@name='windowToolsCampfire']/rect/grid/@required_tools">toolCookingPot,toolBeaker</set></configs>
